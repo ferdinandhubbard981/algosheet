@@ -1,1 +1,20 @@
+wk1:
+big o:
+slide 4 of big o slides with notation descriptions
+
+week 2:
+interval scheduling:
+interval scheduling algorithms and complexity etc...
+interval scheduling algorithms proofs
+
+graph theory:
+all definitions of graph properties with examples if necessary
+{Graph, edge, verted, component, degree, walk, isomorphism, euler walk, connected, }
+
+all graph notation:
+G{a, b ,c} is a graph
+{a, b, c} is a set of vertices
+
+proof that all walks from u to v contain path from u to v
+
 handshaking lemma  sigma v∈V (G) d(v) = 2|E(G)|.
