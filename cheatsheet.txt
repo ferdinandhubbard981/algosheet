@@ -1,3 +1,5 @@
+independant set definition
+
 wk1:
 big o:
 slide 4 of big o slides with notation descriptions
@@ -56,4 +58,46 @@ B, C, D => A
 
 claim on slide 12 of trees proof and definition
 
+week 4:
+adjacency matrix example
+adjacency list example
 
+complexity times:
+{
+    sort array of lists
+    adjacency query
+    neighbourhood query
+    dfs
+    bfs
+    dijkstra
+    each of dijkstra operations (slide 7)
+}
+adjacency list vs matrices (1 sentence describing in practice)
+
+search:
+dfs:
+component finding basic brute force search explained/ pseudocode
+depth first search explained/ pseudocode
+dfs search correctness proof by induction
+DFS tree always gives DFS tree proof
+loop invariant
+complexity analysis
+
+bfs:
+distance definition for undirected and directed (with base cases)
+bfs search explained/ pseudocode
+BFS tree definition
+Proof: the tree of edges from pred is always a BFS tree
+loop invariant
+complexity analysis
+
+dijkstra:
+weighted graph definition
+weight function definition
+length definition
+distance definition
+dijkstra algorithm proof by induction
+relevant operations definitions (slide 7)
+dijkstra algorithm explanation/ pseudocode
+loop invariant
+complexity analysis
