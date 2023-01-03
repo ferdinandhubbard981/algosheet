@@ -9,12 +9,51 @@ interval scheduling algorithms proofs
 
 graph theory:
 all definitions of graph properties with examples if necessary
-{Graph, edge, verted, component, degree, walk, isomorphism, euler walk, connected, }
+{Graph, edge, verted, component, degree, walk, isomorphism, euler walk, connected, 
+digraph, strongly connected, weakly connected, in-degree, out-degree, 
+cycle, hamilton cycle, }
+
 
 all graph notation:
+component is x subset G
+component is also a graph
+strong component definition (not same as strongly connected)
 G{a, b ,c} is a graph
 {a, b, c} is a set of vertices
 
 proof that all walks from u to v contain path from u to v
+week 3:
+digraph:
+N+() and N-() notation
+d+() and d-()
+euler walk and weakly/ stronly connected properties and proof
+strongly connected includes isolated vertex
+5F and 5h proof
+euler walk undirected graph d+ = d- except for start and end
 
-handshaking lemma  sigma v∈V (G) d(v) = 2|E(G)|.
+5f proof
+
+Dirac's theorem, definition, proof (3 lemmas)
+
+handshaking lemma  definition and proof
+k-regular graph definition
+directed handshaking lemma definition and proof
+
+trees:
+
+definitions {forest, tree, degree of a TREE}
+definitions and proofs:
+{lemma 1, lemma 2, lemma 3}
+Equivalence/ implication proofs for:
+{
+    A: T is connected and has no cycles: ie a tree
+    B: T has n-1 edges and is connected
+    C: T has n-1 edges and no cycles
+    D: T has a unique path beween any pair of vertices
+} 
+A => B, C, D
+B, C, D => A
+
+claim on slide 12 of trees proof and definition
+
+
