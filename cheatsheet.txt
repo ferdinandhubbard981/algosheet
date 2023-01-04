@@ -1,5 +1,8 @@
 independant set definition
 
+tip for medium questions:
+apply an algorithm you know in a clever way, don't write a new algorithm.
+
 wk1:
 big o:
 slide 4 of big o slides with notation descriptions
@@ -107,3 +110,34 @@ dijkstra algorithm explanation/ pseudocode
 loop invariant
 complexity analysis
 
+week 5:
+definitions: {
+    matching: a collection of disjoint edges
+    perfect matching: a matching where every vertex in contained in some mathing edge
+    bipartite graph: a graph G is bipartite if V(G) can be split into two sets A and B, which contain no edges(between the elements of the set).
+    augmenting path: given a matching M and a BIPARTITE graph G, an augmenting path for M is an augmenting path in G which alternates between matching and non-matching edges. Starting and ending with non-matched vertices.
+    augmenting path formal definition:
+    
+}
+
+proof: {
+    G is bipartite if it has not odd length cycle
+    G is bipartite only if it has not odd length cycle
+} 
+2nd slideshow:
+simple greedy matching algorithm explanation
+switch(M, P) explanation and pseudocode: {
+    explanation: {
+        let x be the odd (matching) edges in augmeting path A.
+        let y be the even (non-matching) edges in augmenting path A.
+        remove x from M
+        add y to M
+        return M // here M is bigger than before by 1 matching because len(y) = len(x) + 1
+    }
+}
+MaxMatching explanation and pseudocode (digraph version)
+loop invariant of MaxMatching
+complexity of MaxMatching
+explain how to contruct temporary digraph in order to find augmenting path for bipartite graph G with matching M.
+proof of augmenting path using temp digraph
+berg's lemma proof (if G has no augmenting paths, them matching is maximum)
