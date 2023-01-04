@@ -2,6 +2,7 @@ independant set definition
 
 tip for medium questions:
 apply an algorithm you know in a clever way, don't write a new algorithm.
+fibonacci heap
 
 wk1:
 big o:
@@ -141,3 +142,17 @@ complexity of MaxMatching
 explain how to contruct temporary digraph in order to find augmenting path for bipartite graph G with matching M.
 proof of augmenting path using temp digraph
 berg's lemma proof (if G has no augmenting paths, them matching is maximum)
+
+slideshow 3:
+definitions: {
+    spanning tree
+    minimum spanning tree
+}
+
+prim's algorithm explanation
+prim's algorithm formal explanation
+prim's algorithm pseudocode
+prim's algorithm time/space complexity
+prim's algorithm loop invariant
+prim's algorithm correctness proof
+
