@@ -60,7 +60,7 @@ claim on slide 12 of trees proof and definition
 
 week 4:
 adjacency matrix example
-adjacency list example
+adjacency list example [s] -> a, b
 
 complexity times:
 {
@@ -86,6 +86,11 @@ complexity analysis
 bfs:
 distance definition for undirected and directed (with base cases)
 bfs search explained/ pseudocode
+
+explanation: BFS works by starting at a vertex and then adding all adjacent vertices to a queue.
+We then take the first vertex in the queue and look for a new set of adjacent vertices to add,
+repeating the process until we have reached our destination.
+
 BFS tree definition
 Proof: the tree of edges from pred is always a BFS tree
 loop invariant
@@ -101,3 +106,4 @@ relevant operations definitions (slide 7)
 dijkstra algorithm explanation/ pseudocode
 loop invariant
 complexity analysis
+
