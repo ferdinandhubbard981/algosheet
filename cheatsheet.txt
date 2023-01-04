@@ -125,6 +125,7 @@ proof: {
     G is bipartite if it has not odd length cycle
     G is bipartite only if it has not odd length cycle
 } 
+
 2nd slideshow:
 simple greedy matching algorithm explanation
 switch(M, P) explanation and pseudocode: {
@@ -154,5 +155,20 @@ prim's algorithm formal explanation
 prim's algorithm pseudocode
 prim's algorithm time/space complexity
 prim's algorithm loop invariant
-prim's algorithm correctness proof
+prim's algorithm correctness I proof
+prim's algorithm correctness II proof
+
+slideshow 4:
+kruskal's algorithm explanation
+kruskal's algorithm formal explanation
+kruskal's algorithm time/space complexity (same as prim's I think)
+kruskal's algorithm correctness I proof
+kruskal's algorithm correctness II proof
+
+worksheet:
+algorithm for finding bipartite sets from bipartite graph
+question 5
+question 7 maybe
+
+
 
