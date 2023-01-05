@@ -159,9 +159,7 @@ prim's algorithm correctness I proof
 prim's algorithm correctness II proof
 
 slideshow 4:
-kruskal's algorithm explanation
 kruskal's algorithm formal explanation
-kruskal's algorithm time/space complexity (same as prim's I think)
 kruskal's algorithm correctness I proof
 kruskal's algorithm correctness II proof
 
@@ -170,5 +168,52 @@ algorithm for finding bipartite sets from bipartite graph
 question 5
 question 7 maybe
 
+week 7:
+slideshow 1:
+kruskal's algorithm explanation
+kruskal's algorithm pseudocode
+kruskal's algorithm time/space complexity for all 3 iterations of the program
 
+slideshow 2: LOOK AT SUMMARY PAGE
+union data find functions and complexities: {
+    MakeUnionFind(X)
+    Union(x, y)
+    findset(x)
+} (only the forest versions)
+proof by induction that d = O(log X) where x is number of vertices/ elements in graph
+note about flattening trees (inverse Ackermann function)
+
+wk 8:
+linear programming formal definition
+
+linear programming:
+standard form:
+turn >= to <= (except for >=0 non-negativity)
+turn = into >= and <=
+turn "min subject to" to "max subject to"
+if y is not non-negative, then substitute y = y1 - y2, where y1, y2 >= 0
+then put into matrix form
+PUT EXAMPLE OF ALL THIS
+
+simplex:
+vertex cover definition
+
+flow networks:
+definitions: {
+    flow networks
+    flow
+    source
+    sink
+    capacity function
+    value
+    maximum flow
+    cut
+
+}
+
+proofs: {
+    lemma 1: for all vertices except source and sink, flow in = flow out
+    lemma 2: for all cuts A, B, Aout - Ain = Bin - Bout
+    
+}
 
