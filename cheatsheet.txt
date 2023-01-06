@@ -188,6 +188,7 @@ linear programming formal definition
 
 linear programming:
 standard form:
+EXAMPLE OF SYNTAX OF LINEAR PROGRAM in written and matrix formats
 turn >= to <= (except for >=0 non-negativity)
 turn = into >= and <=
 turn "min subject to" to "max subject to"
@@ -208,12 +209,69 @@ definitions: {
     value
     maximum flow
     cut
-
+    augmenting path network P
+    residual capacity of edge (u, v)
+    residual capacity of network P
 }
 
 proofs: {
     lemma 1: for all vertices except source and sink, flow in = flow out
     lemma 2: for all cuts A, B, Aout - Ain = Bin - Bout
-    
+    lemma 3: LEMMA 3 KIND OF IMPLIES THE NEXT 3 STATEMENTS
+    statement: Ford-fulkerson always returns a maximum flow
+    statement: there is always a maximum flow with integer values
+    max-fow min-cut theorem: the value of a maximum flow is always equal to the capacity of a minimum cut.
+
+}
+ford-fulkerson explanation/ pseudocode
+ford-fulkerson complexity + sub-step complexities
+
+week 9:
+slideshow 1:
+TO PROVE: {
+    lemma 1 
+    irrational edge capacities infinite runtime PROOF ON WORKSHEET
+
+}
+edmonds-karp algorithm explanation
+
+slideshow2:
+definitions: {
+    circulation network
+    demand function
+    circulation function
+}
+example of demand network
+example of capacity vertices network and how to turn into normal network
+explanation of how to solve these networks
+
+slideshow 3:
+definitions: {
+    cook reduction: reduce problem into other problem with existing solution FULL DEFINITION ON SLIDE 3
+    <=c: notation that means x <=c y, x reduces to y
+    oracle: black box that will solve a problem in O(1) time
+
+}
+chain reduction example
+reduction can be used to show that problem is impossible in eg polynomial time
+
+definitions: {
+    NP: you can verify that the output is correct in polynomial time
+    witness
+    Verify function 
+    conjunctive normal form: and of or clauses
+    literal
+    or clause
+    assignment
+    truth value
+    satisfiable: the CNF is true for some set of inputs/ assignments
+    SAT problem: is a given CNF, satisfiable?
+    cook-levin theorem: every problem in NP is reducable to SAT
+    np-hard: if any problem in NP is cook reducable to it
+    np-complete: the problem is both NP-hard and NP
 }
 
+any P is also NP explanation:
+{
+    in verify(x, w), you discard the w, and just run the polynomial algorithm on x to get a yes or no.
+}
