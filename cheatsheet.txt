@@ -1,4 +1,3 @@
-independant set definition
 
 tip for medium questions:
 apply an algorithm you know in a clever way, don't write a new algorithm.
@@ -267,7 +266,7 @@ definitions: {
     satisfiable: the CNF is true for some set of inputs/ assignments
     SAT problem: is a given CNF, satisfiable?
     cook-levin theorem: every problem in NP is reducable to SAT
-    np-hard: if any problem in NP is cook reducable to it
+    np-hard: if all problems in NP are cook reducible to it
     np-complete: the problem is both NP-hard and NP
 }
 
@@ -275,3 +274,53 @@ any P is also NP explanation:
 {
     in verify(x, w), you discard the w, and just run the polynomial algorithm on x to get a yes or no.
 }
+
+slideshow 4:
+definitions: {
+    width: the width of the smallest width clause (clause: each bit of the CNF)
+    3-SAT: is a given width-3 CNF formula satisfiable?
+}
+
+proofs: {
+    3-SAT is NP-Complete: {
+        How to turn CNF into width-3 CNF cases: {
+            width == 1
+            width == 2
+            width >= 4
+        }
+    }
+}
+
+why is 3-sat useful: because it is hard, and we can reduce other problems to it, proving they are also hard.
+
+wk10:
+definitions: {
+    independant set
+    maximum independant set
+}
+
+How to turn problem into decision version of the problem. eg: {
+    problem: what is the maximum independant set for graph G
+    Decision problem: Is there an independant set of size at least k for graph G
+}
+
+examples of how to reduce problems: {
+    SAT <=c 3-SAT
+    3-SAT <=c IS
+    IS <=c VC
+    VC <=c ILP
+}
+
+proofs: {
+    VC is np complete
+    lemma: X is an independant set if and only if v \ X is a vertex cover
+}
+
+slideshow 3:
+definitions: {
+    complement: yes and no instances(inputs) of X are no instances of Xbar (the complement) and vice versa
+    co-np: the set of problems who's complement are in NP. eg. SATbar
+}
+NP != CO-NP: conjecture explanation
+
+karp reduction explanation and notation
