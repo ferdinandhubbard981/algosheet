@@ -1,4 +1,6 @@
-
+set notation such as: {
+    [x]: list of 1 .. x integers
+}
 tip for medium questions:
 apply an algorithm you know in a clever way, don't write a new algorithm.
 fibonacci heap
@@ -9,6 +11,7 @@ slide 4 of big o slides with notation descriptions
 
 week 2:
 interval scheduling:
+interval scheduling formal notation
 interval scheduling algorithms and complexity etc...
 interval scheduling algorithms proofs
 
@@ -18,6 +21,7 @@ all definitions of graph properties with examples if necessary
 digraph, strongly connected, weakly connected, in-degree, out-degree, 
 cycle, hamilton cycle, }
 
+hamilton cycle requirement
 
 all graph notation:
 component is x subset G
@@ -174,6 +178,10 @@ kruskal's algorithm pseudocode
 kruskal's algorithm time/space complexity for all 3 iterations of the program
 
 slideshow 2: LOOK AT SUMMARY PAGE
+definitions: {
+    depth of tree
+    union of equal depth increases depth
+}
 union data find functions and complexities: {
     MakeUnionFind(X)
     Union(x, y)
@@ -259,7 +267,7 @@ definitions: {
     witness
     Verify function 
     conjunctive normal form: and of or clauses
-    literal
+    literal: either a variable or a negation of a variable
     or clause
     assignment
     truth value
@@ -304,7 +312,7 @@ How to turn problem into decision version of the problem. eg: {
     Decision problem: Is there an independant set of size at least k for graph G
 }
 
-examples of how to reduce problems: {
+examples of how to reduce problems: { NOTE: ALL OF THESE ARE BOTH COOK AND KARP REDUCTIONS
     SAT <=c 3-SAT
     3-SAT <=c IS
     IS <=c VC
@@ -324,3 +332,54 @@ definitions: {
 NP != CO-NP: conjecture explanation
 
 karp reduction explanation and notation
+karp only defined for decision problems
+
+If not specified: {
+    NP-Hard is under cook reductions
+    NP-complete is under karp reduction
+}
+
+Options for what you can do when you have a np hard problem {
+    approximations:
+    parameterized:
+    try something slower than exponential time:
+}
+
+planar graph definition: a graph is planar if it can be drawn without any two edges overlapping
+
+worksheet:
+clique definition
+
+graph complement example for mapping graph problems Q1
+
+list of np-complete problems
+to show that a problem is np complete, reduce a NP-complete problem to it.
+
+wk11:
+dynamic programming:
+3 steps: {
+    step 1:come up with an exponential-time recursive algorithm for your problem by reducing it to multiple smaller versions of itself
+    step 2: arrange things so that most of the calls of your recursive algorithm are repeated, and use this to make it polynomial
+    step 3: rewrite the algorithm as an iterative one (table) note: how can you collapse the recursive algorithm?
+}
+
+explanation: {
+    think of your problem as a sequence of choices/ decisions
+    call program on each 'case'/ decision
+}
+
+example for interval scheduling: {
+    choice: include or not include interval i
+    call WIS (max weighted interval scheduling algorithm) on schedule without i and schedule with i but without all intersections of i
+    combine two choices
+    output result
+}
+
+recursive interval schedule pseudocode form slide 6
+
+slideshow 3:
+
+bellman-ford algorithm:
+no negative weight cycles
+
+
