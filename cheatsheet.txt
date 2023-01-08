@@ -377,9 +377,16 @@ example for interval scheduling: {
 
 recursive interval schedule pseudocode form slide 6
 
+MEMOISE DEFINITION: every-time we do a call (maybe recursive), we store the result in a hashmap/ data structure
 slideshow 3:
 
 bellman-ford algorithm:
+COMPLEXITY FOR ALL 3 DESIGN ITERATIONS OF PROGRAM
+shortest walk instead of shortest path
 no negative weight cycles
+dijkstra works locally, therefore doesn't work with negative weights
+slow bellman-ford algo pseudo/explanation
+explain differences between improved algorithms of bellman-ford
 
+slide-show 4:
 
