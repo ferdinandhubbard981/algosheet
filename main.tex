@@ -23,7 +23,7 @@
 \newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
 \makeatother
 
-\title{Algorithms II Cheat Sheet}
+\title{Algorithms II CheatSheet}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -38,7 +38,7 @@
 %\colorbox[HTML]{e4e4e4}{\makebox[\textwidth-2\fboxsep][l]{texto}
 \begin{document}
 
-\begin{center}{\huge{\textbf{Algorithms II Cheat Sheet}}}\\
+\begin{center}{\huge{\textbf{Algorithms II Cheat-Sheet}}}\\
 \end{center}
 \begin{multicols*}{3}
 
@@ -182,49 +182,82 @@
 
 %------------ Graph Theory 2 ---------------
 \begin{tikzpicture}
-    \node [mybox] (box){%
-        \begin{minipage}{0.3\textwidth}
-    
-        \textbf{Theorem}: If G has an Euler walk, then either: \\
-        \vspace{-5mm}
-        \setlist{nolistsep}
-        \begin{itemize} [noitemsep]
-            \item every vertex of G has even degree; or
-            \item all but two vertices $v_0$ and $v_k$ have even degree, and any euler walk must have $v_0$ and $v_k$ as endpoints
-        \end{itemize}
-        \hline
-        \textbf{Theorem}: let G = (V, E) be a digraph with no isolated vertices, and let $U,v \in V$. Then G has an Euler walk 
-        from u to v if and only if G is weakly connected and either: \\
-        \vspace{-5mm}
-        \setlist{nolistsep}
-        \begin{itemize} [noitemsep]
-            \item u = v and every vertex of G has equal in- and out-degrees; order
-            \item $u \neq v, d^+ (u) = d^- (u) + 1, d^- (v) = d^+ (v) + 1$ and every other vertex of G has equal in- and out-degrees
-        \end{itemize}
-        \hline
-        \textbf{Dirac's Theorem}: Let $n \ge 3$. Then any n-vertex graph G with minimum degree at least $\frac{n}{2}$ has a Hamilton cycle. \\
-        % \textbf{Proof}: Try to find a long path inductively: start with a trivial one-vertex path and repeatedly extend it. \\ TODO PROOF
-        % Suppose G contains a k-vertex path v1 . . . vk for some k ∈ [n − 1]. \\
-        % \textbf{Case 1: $k \le \frac{n}{2}$}: then being greedy works. \\
-        % In general, $d(v_k) \ge \frac{n}{2} > |\{v_1, ..., v_{k-1}\}|$, so there’s a vertex $v{k+1}$ adjacent to $v_k$ other than $v_1, . . . , v_{k−1}$. 
-        % Then $v_1 . . . v_{k+1}$ is a path of length k + 1. 
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
 
-        \textbf{Handshake lemma}: For any graph \\G = (V, E), $\sum_{v \in V}^{} d(v) = 2|E|$ \\
-        \textbf{Proof}: All edges contain two vertices, and eachvertex v is in d(v) edges. Count the number of verted-edge pairs:
-        Let $X = \{(v, e) \in V \times E: v \in E\}$. Then $|X| = 2|E|$ and $|X|$ = $\sum_{v \in V}^{}d(v)$, so we're done.
-        \hline
+    \textbf{Theorem}: If G has an Euler walk, then either: \\
+    \vspace{-5mm}
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
+        \item every vertex of G has even degree; or
+        \item all but two vertices $v_0$ and $v_k$ have even degree, and any euler walk must have $v_0$ and $v_k$ as endpoints
+    \end{itemize}
+    \hline
+    \textbf{Theorem}: let G = (V, E) be a digraph with no isolated vertices, and let $U,v \in V$. Then G has an Euler walk 
+    from u to v if and only if G is weakly connected and either: \\
+    \vspace{-5mm}
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
+        \item u = v and every vertex of G has equal in- and out-degrees; order
+        \item $u \neq v, d^+ (u) = d^- (u) + 1, d^- (v) = d^+ (v) + 1$ and every other vertex of G has equal in- and out-degrees
+    \end{itemize}
+    \hline
+    \textbf{Dirac's Theorem}: Let $n \ge 3$. Then any n-vertex graph G with minimum degree at least $\frac{n}{2}$ has a Hamilton cycle. \\
+    % \textbf{Proof}: Try to find a long path inductively: start with a trivial one-vertex path and repeatedly extend it. \\ TODO PROOF
+    % Suppose G contains a k-vertex path v1 . . . vk for some k ∈ [n − 1]. \\
+    % \textbf{Case 1: $k \le \frac{n}{2}$}: then being greedy works. \\
+    % In general, $d(v_k) \ge \frac{n}{2} > |\{v_1, ..., v_{k-1}\}|$, so there’s a vertex $v{k+1}$ adjacent to $v_k$ other than $v_1, . . . , v_{k−1}$. 
+    % Then $v_1 . . . v_{k+1}$ is a path of length k + 1. 
 
-        \textbf{Directed Handshake lemma}: For any graph \\G = (V, E), $\sum_{v \in V}^{} d^+(v) = \sum_{v \in V}^{} d^-(v) = 2|E|$ \\
-        \textbf{Proof}: TODO. Instead of counting vertex-edge pairs, we count tail-edge pairs. Each edge has one tail so $|X| = |E|$
-        \hline
+    \textbf{Handshake lemma}: For any graph \\G = (V, E), $\sum_{v \in V}^{} d(v) = 2|E|$ \\
+    \textbf{Proof}: All edges contain two vertices, and eachvertex v is in d(v) edges. Count the number of verted-edge pairs:
+    Let $X = \{(v, e) \in V \times E: v \in E\}$. Then $|X| = 2|E|$ and $|X|$ = $\sum_{v \in V}^{}d(v)$, so we're done.
+    \hline
+
+    \textbf{Directed Handshake lemma}: For any graph \\G = (V, E), $\sum_{v \in V}^{} d^+(v) = \sum_{v \in V}^{} d^-(v) = 2|E|$ \\
+    \textbf{Proof}: TODO. Instead of counting vertex-edge pairs, we count tail-edge pairs. Each edge has one tail so $|X| = |E|$
+    \hline
 
 
-        \end{minipage}
-    };
-    %------------ Graph Theory 2 Header ---------------------
-    \node[fancytitle, right=10pt] at (box.north west) {Graph Theory};
-    \end{tikzpicture}
-    
+    \end{minipage}
+};
+%------------ Graph Theory 2 Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Graph Theory};
+\end{tikzpicture}
+
+
+%------------ Trees ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Definitions}: \\
+    \textbf{Forest}: a graph with no cycles \\
+    \textbf{Tree}: a forest that is connected \\
+    \textbf{Root}: for T = (V, E). Root $r \in V$ as follows. For all vertices $v \neq r$, let $P_v$ be the unique path from r to v.
+    Then direct each $P_v$ from r to v. \\
+    \textbf{Leaf}: is a degree-1 vertex. Root cannot be a leaf. \\
+    \textbf{Ancestor}: u is an .. of v if u i on $P_v$ \\
+    \textbf{Parent}: u is the .. of v if $u \in N^-(v)$ \\
+    \textbf{level}: first .. $L_0$ of T is {r}, and $L_{i+1} = N^+(L_i)$. \\
+    \textbf{depth}: of T is max\{i: $L_i \neq \emptyset$\}. Root doesn't count  \\
+    \hline
+    \textbf{Lemma 1}: If T = (V, E) is a tree, then any pair of vertices u, v $\in$ V is joined by a unique path uTv in T. \\
+    % \textbf{Proof}: TODO \\
+    \textbf{Lemma 2}: Any n-vertex tree has n-1 edges \\
+    % \textbf{Proof}: TODO \\
+    \textbf{Lemma 3}: Any n-vertex tree T = (V, E) with $n \ge 2$ has at least 2 leaves \\
+    % \textbf{Proof}: TODO \\
+    \textbf{Tree Properties}: \\
+    \textbf{A}: T is connected and has no cycles \\
+    \textbf{B}: T has n-1 edges and is connected \\
+    \textbf{C}: T has n-1 edges and has no cycles \\
+    \textbf{D}: T has a unique path between any pair of vertices \\
+    $A \implies B, C, D \hspace{2cm} A \impliedby B, C, D$. \\
+\end{minipage}
+};
+%------------ Trees Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Trees};
+\end{tikzpicture}
 
 
 
