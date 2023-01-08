@@ -135,7 +135,7 @@
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-    \textbf{Definitions}: \\
+    
     \textbf{Graph}: G = (V, E) \\
     \textbf{Edge}: E = E(G) is a set of edges contained in $\{\{u,v\}: u,v \in V, u \neq v\}$ \\
     \textbf{Vertex}: V = V(G) is a set of vertices \\
@@ -219,7 +219,7 @@
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-    \textbf{Definitions}: \\
+    
     \textbf{Forest}: a graph with no cycles \\
     \textbf{Tree}: a forest that is connected \\
     \textbf{Root}: for T = (V, E). Root $r \in V$ as follows. For all vertices $v \neq r$, let $P_v$ be the unique path from r to v.
@@ -236,6 +236,7 @@
     % \textbf{Proof}: TODO \\
     \textbf{Lemma 3}: Any n-vertex tree T = (V, E) with $n \ge 2$ has at least 2 leaves \\
     % \textbf{Proof}: TODO \\
+    \hline
     \textbf{Tree Properties}: \\
     \textbf{A}: T is connected and has no cycles \\
     \textbf{B}: T has n-1 edges and is connected \\
@@ -275,7 +276,7 @@
 \begin{tikzpicture}
 \node [mybox] (box){%
 \begin{minipage}{0.3\textwidth}
-    \textbf{Definitions}: \\
+    
     % \textbf{Linear Programming}: TODO\\
     \textbf{Feasible}: We say $\overrightarrow{x} \in \mathbb{R}^n$ is a feasible solution if $\overrightarrow{x} \ge \overrightarrow{0}
     $and$ A\overrightarrow{x} \le \overrightarrow{b}.$\\
@@ -313,6 +314,79 @@
 %------------ Linear Programming Header ---------------------
 \node[fancytitle, right=10pt] at (box.north west) {Linear Programming};
 \end{tikzpicture}
+
+%------------ Flow Networks ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    
+        
+        \textbf{Flow Network}: consists of a directed graph $G = (V, E)$,
+        a \textbf{capacity function} $c: E \rightarrow \mathbb{N}$,
+        a \textbf{source} vertex $s \in V$ with $N^-(s) = \emptyset$,
+        and a \textbf{sink} vertex $t \in V$ with $N^+(t) = \emptyset$ \\
+        \textbf{Flow}: is a function in (G, c, s, t) $f: E \rightarrow \mathbb{R}$
+        with properties:
+        % \vspace{-5mm}
+        \setlist{nolistsep}
+        \begin{itemize} [noitemsep]
+            \item No edge has more flow than capacity; \\formally, for all $e \in E, 0 \le f(e) \le c(e)$
+            \item Flow is conserved at vertices; flow in = flow out
+        \end{itemize}
+        \textbf{Maximum Flow}: a flow $f$ maximising the value of the flow, $v(f)$\\
+        \textbf{Cut}: is any pair of disjoint edges $A, B \subseteq V$
+        with $A \cup B = V$, $s \in A$ and $t \in B$. \\
+        \hline
+        
+        \textbf{Lemma 1}: For all sets $X \subseteq V \ \{s, t\}$, we have $f^+(X) = f^-(X)$.
+        So flow is conserved in sets/cuts as well as vertices \\
+        \textbf{Proof}: By summing conservation of flow over all $v \in X$: \\
+        $\sum_{v \in X}^{} \sum_{u \in N^-(v)}^{} f(u, v) = \sum_{v \in X}^{} \sum_{w \in N^+(v)}^{} f(v, w)$.
+        For all $e \subseteq X$, $f(e)$ appears once on each side; after cancelling those
+        terms we're left with $f^+(X) = f^-(X)$. \\
+        \textbf{Lemma 2}: For all cuts $(A, B)$, $f^+(A) - f^-(A) = f^-(B) - f^+(B)$. \\
+        \textbf{Proof}: We have shown that $v(f) = f^+(A) - f^-(A)$ because A and B are disjoint and $A \cup B = V.$
+        \hline
+        \textbf{Lemma 3}: Push(G, c,s,t, f , P) returns a new flow f', with value $v(f') = v(f) + C$ in $O(|V(G)|)$ time\\
+        \textbf{Ford-Fulkerson}: \\
+        \includegraphics[width = 8cm]{ford-fulkerson-pseudocode.png}
+        \textbf{Complexity}: Every step takes $O(|E|)$ time or $O(|V|)$ time, and since G is weakly connected we have 
+        $|V| = O(|E|)$. So the running time is $O(v(f*)|E|)$.\\
+        
+        
+    
+    \end{minipage}
+};
+%------------ Flow Networks Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Flow Networks};
+\end{tikzpicture}
+
+
+
+
+%------------ Flow Networks 2 ---------------
+\begin{tikzpicture}
+    \node [mybox] (box){%
+        \begin{minipage}{0.3\textwidth}
+            \textbf{Residual graph}: $G_f$ of (G, c, s, t) on V(G) as follows:\\
+            % \vspace{-5mm}
+            \setlist{nolistsep}
+            \begin{itemize} [noitemsep]
+                \item if flow < capacity: then forward edge with value capacity-flow
+                \item if flow > 0: add backward edge with value flow
+            \end{itemize}
+            \textbf{Residual capacity of edge}: max\{capacity - flow, backward edge flow\}\\
+            \textbf{Residual capacity of network}: minimum residual capacity of it's edges\\
+            \textbf{Augmenting Path}: \\
+            
+            \includegraphics[width = 8cm]{residual-graph-example.png}
+            
+        
+        \end{minipage}
+    };
+    %------------ Flow Networks 2 Header ---------------------
+    \node[fancytitle, right=10pt] at (box.north west) {Flow Networks};
+    \end{tikzpicture}
 
 
 
