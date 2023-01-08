@@ -95,11 +95,48 @@
     Step 2 takes O(n log n) \\
     Steps 3–6 all take O(1) time and are executed at most n times. \\
     $\therefore total running time = O(n log n) + O(n) · O(1) = O(n log n).$ \\
-    \hline
-    interval scheduling proofs 
     \end{minipage}
 };
 %------------ Interval Scheduling Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Interval Scheduling};
+\end{tikzpicture}
+
+
+%------------ Interval Scheduling 2 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    
+    \textbf{Formal GreedySchedule} \\
+    $A^+$ := argmin $\{f : (s, f ) \in R, A \cup \{(s, f )\}$ is compatible\} for all $A \subseteq R$, \\
+    $A_0 := \emptyset,$ \hspace{1cm} $A_{i+1} := A_i \cup \{A_i^+\}$ \\
+    t := max\{i: $A_i$ is defined\}\\
+    \textbf{Interval Scheduling Proofs} \\
+    \textbf{Lemma}: Greedy Schedule always outupts $A_t$ \\
+    \textbf{Proof}: By induction form the following loop invariant.
+    At the start of the i'th iteration of 4-7: \\
+    \vspace{-5mm}
+    \begin{itemize}
+        \item A is equal to $A_t \cap \{(s_1, f1), ..., (s_{i-1}, f_{i-1})\}$
+        \item lastf is equal to the latest finish time of any request in A (or 0 if A = [])
+    \end{itemize}
+    \hline
+    \textbf{Lemma}: $A_t$ is a compatible set \\
+    \textbf{Proof}: Instant by induction; $A_0$ is compatible, and if $A_i$ is compatible then so is $A_{i+1} = A_i \cup {A^+}$ by the definition of $A_i^+$
+    
+    \hline
+    \textbf{Lemma}: $A_t$ is a maximum compatible subset of the Array $R$ (look in pseudocode) \\
+    \textbf{Proof}:\\
+    Base case for i = 1: $A_0^+$ is the fastest finishing request in $R$ by definition\\
+    Inductive step: Suppose $A_i$ finishes faster than $B_i$. \\
+    Let $B_i^+$ be the (i+1)'st fastetst-finishing element of B.
+    Since $A_i$ finishes faster than $B_i$, $A_i \cup \{B_i^+\}$ is compatible. Hence by definition, $A_i^+$ exists and finishes no later than $B_i^+$
+    \end{minipage}
+    \hline
+    \textbf{Theorem}: GreedySchedule outputs $A_t$, which is a maximum compatible set. \\
+    \textbf{Proof}: putting all of the above proofs together, we prove the theorem.
+};
+%------------ Interval Scheduling 2 Header ---------------------
 \node[fancytitle, right=10pt] at (box.north west) {Interval Scheduling};
 \end{tikzpicture}
 
