@@ -389,4 +389,6 @@ slow bellman-ford algo pseudo/explanation
 explain differences between improved algorithms of bellman-ford
 
 slide-show 4:
+bellman ford table example with graph
+johnson's algorithm
 
