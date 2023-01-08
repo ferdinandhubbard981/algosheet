@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -694,91 +694,75 @@ l.127     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:135: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:134: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.135     \hline
+l.134     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:135: You can't use `\hrule' here except with leaders.
-\vline ->\vrule 
-                \@width \arrayrulewidth 
-l.135     \hline
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 141--142
+[][] 
+ []
+
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:168: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.168     \hline
                 
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:135: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.135     \hline
-                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:135: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.135     \hline
-                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (683.39905pt too wide) in paragraph at lines 141--142
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 174--175
 [][] 
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 178--179
+Underfull \hbox (badness 6876) in paragraph at lines 213--214
 []|$\OML/cmm/m/it/9 y \OT1/cmr/m/n/9 = \OML/cmm/m/it/9 B[]x[] []\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 b [] x\OT1/cmr/m/n/9 ) +
  []
 
 
-Overfull \hbox (7.87187pt too wide) in paragraph at lines 154--180
+Overfull \hbox (7.87187pt too wide) in paragraph at lines 189--215
 [][] 
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 184--185
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 219--220
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 209--210
-[][] 
- []
-
-
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 230--231
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//big-o-definition.png> <./images//big-o-formal.png> <./images//req-comp-def.png> <./images//interval-scheduling-problem.png> <./images//greedy-schedule-pseudo.png>] [2] (./main.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//big-o-definition.png> <./images//big-o-formal.png> <./images//req-comp-def.png> <./images//interval-scheduling-problem.png> <./images//greedy-schedule-pseudo.png>]
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 265--266
+[][] 
+ []
+
+[2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16970 strings out of 480171
- 340985 string characters out of 5894488
- 644028 words of memory out of 5000000
- 34594 multiletter control sequences out of 15000+600000
+ 16968 strings out of 480171
+ 340933 string characters out of 5894488
+ 639028 words of memory out of 5000000
+ 34592 multiletter control sequences out of 15000+600000
  476687 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,16n,89p,459b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ferdi/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (2 pages, 444080 bytes).
+Output written on main.pdf (2 pages, 445236 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
