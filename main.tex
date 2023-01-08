@@ -195,7 +195,7 @@
     % \textbf{Proof}: Try to find a long path inductively: start with a trivial one-vertex path and repeatedly extend it. \\ TODO PROOF
     % Suppose G contains a k-vertex path v1 . . . vk for some k ∈ [n - 1]. \\
     % \textbf{Case 1: $k \le \frac{n}{2}$}: then being greedy works. \\
-    % In general, $d(v_k) \ge \frac{n}{2} > |\{v_1, ..., v_{k-1}\}|$, so there’s a vertex $v{k+1}$ adjacent to $v_k$ other than $v_1, . . . , v_{k-1}$. 
+    % In general, $d(v_k) \ge \frac{n}{2} $>$ |\{v_1, ..., v_{k-1}\}|$, so there’s a vertex $v{k+1}$ adjacent to $v_k$ other than $v_1, . . . , v_{k-1}$. 
     % Then $v_1 . . . v_{k+1}$ is a path of length k + 1. 
 
     \textbf{Handshake lemma}: For any graph \\G = (V, E), $\sum_{v \in V}^{} d(v) = 2|E|$ \\
@@ -251,10 +251,11 @@
 
 
 
-%------------ Search and Dijkstra ---------------
+%------------ Depth First Search ---------------
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
+    \textbf{Graphs as data structures}: \\
     \textbf{Adjacency Matrix}: \\
     Storing: $\Theta(|V|^2)$ space \\
     Adjacency query: $\Theta(1)$ time \\
@@ -264,12 +265,79 @@
     Storing: $\Theta(|V| + |E|)$ space \\
     Adjacency query: $\Theta(d^+(u))$ time \\
     Neighbourhood query: $\Theta(d^+(u))$ time
+    \hline
+    \textbf{DFS}: \\
+    \includegraphics[width = 8cm]{dfs-pseudocode.png}
+    \textbf{Complexity}: In total there are $\sum_{v \in V}^{}d(v) = O(|E|)$ calls to helper (each vertex only runs lines 5-7 once), 
+    and there is O(1) time between calls. So the running time is $O(|V| + |E|)$.\\
+    \textbf{Invariant}: When helper is called, if explored[i] = 1 then $v_i \in V(C)$. \\
+    \textbf{Claim}: Every vertex in P is explored \\
+    \textbf{Proof by induction}: We prove $x_1, ..., x_i$ are explored for all $i \le t$.
+    $x_1$ is explored. If $x_i$ is explored, then helper($x_{i+1}$) will be called from helper($x_i$). so $x_{i+1}$ will also be explored. \\
+    \textbf{DFS Tree}: a .. T of G is a rooted tree satisfying: \\
+    \vspace{-5mm}
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
+        \item $V(T)$ is the vertex set of a component of G;
+        \item If $\{x, y\} \in E(G)$, then x is an ancestor of y in T or vice versa.
+    \end{itemize}
+    
+    \end{minipage}
+};
+%------------ Depth First Search Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Depth First Search};
+\end{tikzpicture}
+
+%------------ Breadth First Search ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    
+        \textbf{Distance}: The distance between x and y, d(x, y), is the length in edges of a
+        shortest path between x and y, or $\infty$ if no such path exists. \\
+        \textbf{BFS}: \\
+        \includegraphics[width = 8cm]{bfs-pseudocode.png}
+        \textbf{Complexity}: If G is in adjacency list form, each edge is added to queue at most twice,
+        incurring $O(1)$ overhead each time, so the running time is $O(|V| + |E|)$. \\
+        \includegraphics[width = 6cm]{bfs-graph.png}
+        \textbf{BFS explanation}: BFS works by starting at a vertex and then adding all adjacent vertices to a queue.
+        We then take the first vertex in the queue and look for a new set of adjacent vertices to add,
+        repeating the process until we have reached our destination. \\
+
 
     \end{minipage}
 };
-%------------ Search and Dijkstra Header ---------------------
-\node[fancytitle, right=10pt] at (box.north west) {Search and Dijkstra};
+%------------ Breadth First Search Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Breadth First Search};
 \end{tikzpicture}
+
+
+
+%------------ Dijkstra's Algorithm ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Weighted Graph}: \\
+        \textbf{Weight function}: \\
+        \textbf{Length}: \\
+        \textbf{Distance}: \\
+        \textbf{Priority queue}: \\
+        \textbf{Dijkstra}: \\
+        \textbf{Complexity}: \\
+
+        \textbf{Dijkstra Operations}: \\
+        \textbf{Claim}: Dijkstra’s algorithm calculates distances correctly.\\
+        \textbf{Proof}: \\
+
+
+
+    \end{minipage}
+};
+%------------ Dijkstra's Algorithm Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Dijkstra's Algorithm};
+\end{tikzpicture}
+
+
 
 
 %------------ Linear Programming ---------------
@@ -278,8 +346,8 @@
 \begin{minipage}{0.3\textwidth}
     
     % \textbf{Linear Programming}: TODO\\
-    \textbf{Feasible}: We say $\overrightarrow{x} \in \mathbb{R}^n$ is a feasible solution if $\overrightarrow{x} \ge \overrightarrow{0}
-    $and$ A\overrightarrow{x} \le \overrightarrow{b}.$\\
+    \textbf{Feasible}: We say $\overrightarrow{x} \in \mathbb{R}^n$ is a feasible solution if $\overrightarrow{x} \ge \overrightarrow{0}$ 
+    and $ A\overrightarrow{x} \le \overrightarrow{b}.$\\
     \textbf{Optimal}: We say $\overrightarrow{x}$ is an optimal solution if $f(\overrightarrow{y}) \le f(\overrightarrow{x})$ for all
     feasible $y \in \mathbb{R}^n$\\
     \textbf{Polytope}: is a geometric object with flat sides \\
@@ -372,8 +440,8 @@
             % \vspace{-5mm}
             \setlist{nolistsep}
             \begin{itemize} [noitemsep]
-                \item if flow < capacity: then forward edge with value capacity-flow
-                \item if flow > 0: add backward edge with value flow
+                \item if flow $<$ capacity: then forward edge with value capacity-flow
+                \item if flow $>$ 0: add backward edge with value flow
             \end{itemize}
             \includegraphics[width = 8cm]{residual-graph-example.png}
             \textbf{Residual capacity of edge}: max\{capacity - flow, backward edge flow\}\\

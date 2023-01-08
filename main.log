@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -793,120 +793,183 @@ Overfull \hbox (2.09277pt too wide) in paragraph at lines 250--251
 <./images//adjacency-list.png, id=10, 135.50626pt x 82.3075pt>
 File: ./images//adjacency-list.png Graphic file (type png)
 <use ./images//adjacency-list.png>
-Package pdftex.def Info: ./images//adjacency-list.png  used on input line 263.
+Package pdftex.def Info: ./images//adjacency-list.png  used on input line 264.
 (pdftex.def)             Requested size: 85.35826pt x 51.84895pt.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:268: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.268     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+<./images//dfs-pseudocode.png, id=11, 715.67375pt x 540.0175pt>
+File: ./images//dfs-pseudocode.png Graphic file (type png)
+<use ./images//dfs-pseudocode.png>
+Package pdftex.def Info: ./images//dfs-pseudocode.png  used on input line 270.
+(pdftex.def)             Requested size: 227.62204pt x 171.74617pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--280
+[]
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//big-o-definition.png> <./images//big-o-formal.png> <./images//req-comp-def.png> <./images//interval-scheduling-problem.png> <./images//greedy-schedule-pseudo.png>]
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 272--273
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 289--290
+[][] 
+ []
+
+<./images//bfs-pseudocode.png, id=32, 869.2475pt x 716.6775pt>
+File: ./images//bfs-pseudocode.png Graphic file (type png)
+<use ./images//bfs-pseudocode.png>
+Package pdftex.def Info: ./images//bfs-pseudocode.png  used on input line 299.
+(pdftex.def)             Requested size: 227.62204pt x 187.6659pt.
+<./images//bfs-graph.png, id=33, 442.65375pt x 335.2525pt>
+File: ./images//bfs-graph.png Graphic file (type png)
+<use ./images//bfs-graph.png>
+Package pdftex.def Info: ./images//bfs-graph.png  used on input line 302.
+(pdftex.def)             Requested size: 170.71652pt x 129.29514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--306
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--306
+[] \OT1/cmr/bx/n/10 BFS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--306
+
+ []
+
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--287
+Underfull \hbox (badness 10000) in paragraph at lines 320--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--301
+Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
 
-<./images//linear-program-matrix-form.png, id=31, 588.1975pt x 238.8925pt>
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 338--339
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--369
+
+ []
+
+<./images//linear-program-matrix-form.png, id=34, 588.1975pt x 238.8925pt>
 File: ./images//linear-program-matrix-form.png Graphic file (type png)
 <use ./images//linear-program-matrix-form.png>
-Package pdftex.def Info: ./images//linear-program-matrix-form.png  used on input line 303.
+Package pdftex.def Info: ./images//linear-program-matrix-form.png  used on input line 371.
 (pdftex.def)             Requested size: 142.26378pt x 57.78008pt.
-<./images//vertex-cover-example.png, id=32, 453.695pt x 254.9525pt>
+<./images//vertex-cover-example.png, id=35, 453.695pt x 254.9525pt>
 File: ./images//vertex-cover-example.png Graphic file (type png)
 <use ./images//vertex-cover-example.png>
-Package pdftex.def Info: ./images//vertex-cover-example.png  used on input line 311.
+Package pdftex.def Info: ./images//vertex-cover-example.png  used on input line 379.
 (pdftex.def)             Requested size: 227.62204pt x 127.91164pt.
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 316--317
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 384--385
 [][] 
  []
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:339: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:407: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.339         \hline
+l.407         \hline
                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--339
+Underfull \hbox (badness 10000) in paragraph at lines 404--407
 
  []
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:349: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:417: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.349         \hline
+l.417         \hline
                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-<./images//ford-fulkerson-pseudocode.png, id=33, 971.63pt x 486.81876pt>
+<./images//ford-fulkerson-pseudocode.png, id=36, 971.63pt x 486.81876pt>
 File: ./images//ford-fulkerson-pseudocode.png Graphic file (type png)
 <use ./images//ford-fulkerson-pseudocode.png>
-Package pdftex.def Info: ./images//ford-fulkerson-pseudocode.png  used on input line 352.
+Package pdftex.def Info: ./images//ford-fulkerson-pseudocode.png  used on input line 420.
 (pdftex.def)             Requested size: 227.62204pt x 114.04587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 418--423
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 418--423
 
  []
 
-
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 362--363
+[2 <./images//adjacency-list.png> <./images//dfs-pseudocode.png>]
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 430--431
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
 
  []
 
-<./images//residual-graph-example.png, id=34, 822.07124pt x 223.83624pt>
+<./images//residual-graph-example.png, id=43, 822.07124pt x 223.83624pt>
 File: ./images//residual-graph-example.png Graphic file (type png)
 <use ./images//residual-graph-example.png>
-Package pdftex.def Info: ./images//residual-graph-example.png  used on input line 378.
+Package pdftex.def Info: ./images//residual-graph-example.png  used on input line 446.
 (pdftex.def)             Requested size: 227.62204pt x 61.97696pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--388
+Underfull \hbox (badness 10000) in paragraph at lines 446--456
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--388
+Underfull \hbox (badness 10000) in paragraph at lines 446--456
 
  []
 
-[2 <./images//adjacency-list.png> <./images//linear-program-matrix-form.png> <./images//vertex-cover-example.png>]
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 394--395
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 462--463
 [][] 
  []
 
-[3 <./images//ford-fulkerson-pseudocode.png> <./images//residual-graph-example.png>] (./main.aux) ) 
+[3 <./images//bfs-pseudocode.png> <./images//bfs-graph.png> <./images//linear-program-matrix-form.png> <./images//vertex-cover-example.png>] [4 <./images//ford-fulkerson-pseudocode.png> <./images//residual-graph-example.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16988 strings out of 480171
- 342345 string characters out of 5894488
+ 17012 strings out of 480171
+ 343046 string characters out of 5894488
  639027 words of memory out of 5000000
- 34616 multiletter control sequences out of 15000+600000
+ 34637 multiletter control sequences out of 15000+600000
  472408 words of font info for 43 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,18n,89p,459b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ferdi/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (3 pages, 525385 bytes).
+Output written on main.pdf (4 pages, 718473 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
