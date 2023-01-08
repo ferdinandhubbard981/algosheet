@@ -271,14 +271,19 @@
 \end{tikzpicture}
 
 
-%------------ linear programming and flow ---------------
+%------------ Linear Programming ---------------
 \begin{tikzpicture}
 \node [mybox] (box){%
 \begin{minipage}{0.3\textwidth}
     \textbf{Definitions}: \\
-    \textbf{Linear Programming}: \\
-    \textbf{Feasible}: \\
-    \textbf{Notation}: \\
+    % \textbf{Linear Programming}: TODO\\
+    \textbf{Feasible}: We say $\overrightarrow{x} \in \mathbb{R}^n$ is a feasible solution if $\overrightarrow{x} \ge \overrightarrow{0}
+    $and$ A\overrightarrow{x} \le \overrightarrow{b}.$\\
+    \textbf{Optimal}: We say $\overrightarrow{x}$ is an optimal solution if $f(\overrightarrow{y}) \le f(\overrightarrow{x})$ for all
+    feasible $y \in \mathbb{R}^n$\\
+    \textbf{Polytope}: is a geometric object with flat sides \\
+    \textbf{Corollary}: There will always be an optimal solution \\
+
     \textbf{Non-Standard Form}: \\
     $-4x + 5y - z \rightarrow$ max subject to \\
     $x + y + z \le 5$; \\
@@ -294,11 +299,19 @@
     $x, y_1, y_2, z \ge 0.$ \\
 
     \textbf{Matrix Form}: \\
-    \includegraphics[width = 8cm]{linear-program-matrix-form.png}
+    \includegraphics[width = 5cm]{linear-program-matrix-form.png}
+
+    \textbf{Simplex Method}: Search greedily for a vertex of the feasible polytope which maximises the objective function \\
+    Worst case: hypercube which has $\Omega(2^n)$ vertices. \\
+    In practice it only need $\Theta(n)$ steps \\
+    \textbf{Vertex Cover}: in a graph G, is a set $X \subseteq V$ such that every edge in E has at least one vertex in X\\
+    We can express finding a minimum vertex cover as solving a linear program in which the solutions must be integers: 
+    an integer linear program. \\
+    \includegraphics[width = 8cm]{vertex-cover-example.png}
     \end{minipage}
 };
-%------------ linear programming and flow Header ---------------------
-\node[fancytitle, right=10pt] at (box.north west) {linear programming and flow};
+%------------ Linear Programming Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Linear Programming};
 \end{tikzpicture}
 
 
