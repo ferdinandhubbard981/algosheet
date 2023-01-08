@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,62 +577,58 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 54.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 58--59
-[][] 
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 66.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 54.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 72--73
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 61--62
 [][] 
  []
 
 <./images//big-o-definition.png, id=4, 1168.365pt x 337.26pt>
 File: ./images//big-o-definition.png Graphic file (type png)
 <use ./images//big-o-definition.png>
-Package pdftex.def Info: ./images//big-o-definition.png  used on input line 78.
+Package pdftex.def Info: ./images//big-o-definition.png  used on input line 67.
 (pdftex.def)             Requested size: 227.62204pt x 65.7011pt.
 <./images//big-o-formal.png, id=6, 1262.7175pt x 351.3125pt>
 File: ./images//big-o-formal.png Graphic file (type png)
 <use ./images//big-o-formal.png>
-Package pdftex.def Info: ./images//big-o-formal.png  used on input line 79.
+Package pdftex.def Info: ./images//big-o-formal.png  used on input line 68.
 (pdftex.def)             Requested size: 227.62204pt x 63.32465pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 [][]
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 84--85
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
 <./images//req-comp-def.png, id=7, 919.435pt x 198.7425pt>
 File: ./images//req-comp-def.png Graphic file (type png)
 <use ./images//req-comp-def.png>
-Package pdftex.def Info: ./images//req-comp-def.png  used on input line 90.
+Package pdftex.def Info: ./images//req-comp-def.png  used on input line 79.
 (pdftex.def)             Requested size: 227.62204pt x 49.20029pt.
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:91: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:80: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.91     \hline
+l.80     \hline
                
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -640,12 +636,12 @@ an alignment. Proceed, and I'll ignore this case.
 <./images//interval-scheduling-problem.png, id=8, 890.32625pt x 134.5025pt>
 File: ./images//interval-scheduling-problem.png Graphic file (type png)
 <use ./images//interval-scheduling-problem.png>
-Package pdftex.def Info: ./images//interval-scheduling-problem.png  used on input line 92.
+Package pdftex.def Info: ./images//interval-scheduling-problem.png  used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 34.38695pt.
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:93: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:82: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.93     \hline
+l.82     \hline
                
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -653,24 +649,40 @@ an alignment. Proceed, and I'll ignore this case.
 <./images//greedy-schedule-pseudo.png, id=9, 882.29625pt x 383.4325pt>
 File: ./images//greedy-schedule-pseudo.png Graphic file (type png)
 <use ./images//greedy-schedule-pseudo.png>
-Package pdftex.def Info: ./images//greedy-schedule-pseudo.png  used on input line 94.
+Package pdftex.def Info: ./images//greedy-schedule-pseudo.png  used on input line 83.
 (pdftex.def)             Requested size: 227.62204pt x 98.9178pt.
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 98.
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 87.
 
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 98.
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 87.
 
 Missing character: There is no · in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--99
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
 [][]
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 103--104
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 92--93
 [][] 
  []
+
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:114: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.114     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:118: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.118     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
 
 /home/ferdi/UoB/y2/alg/algosheet/main.tex:125: Misplaced \noalign.
 \hline ->\noalign 
@@ -680,49 +692,46 @@ l.125     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:129: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.129     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:136: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.136     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 143--144
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 132--133
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--175
+Underfull \hbox (badness 10000) in paragraph at lines 138--164
 \OT1/cmr/bx/n/10 Induced Subgraph\OT1/cmr/m/n/10 : is a subgraph if
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--175
+Underfull \hbox (badness 10000) in paragraph at lines 138--164
 
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 179--180
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 168--169
 [][] 
  []
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:195: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:184: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.195     \hline
+l.184     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
+
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:193: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.193     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
+
+ []
 
 /home/ferdi/UoB/y2/alg/algosheet/main.tex:204: Misplaced \noalign.
 \hline ->\noalign 
@@ -732,76 +741,83 @@ l.204     \hline
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
-
- []
-
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:215: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:208: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.215     \hline
-                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:219: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.219     \hline
+l.208     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 226--227
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 215--216
 [][] 
  []
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:243: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:232: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.243     \hline
+l.232     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--243
+Underfull \hbox (badness 10000) in paragraph at lines 222--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--256
+Underfull \hbox (badness 10000) in paragraph at lines 233--245
 
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 260--261
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 249--250
 [][] 
  []
 
+<./images//adjacency-list.png, id=10, 135.50626pt x 82.3075pt>
+File: ./images//adjacency-list.png Graphic file (type png)
+<use ./images//adjacency-list.png>
+Package pdftex.def Info: ./images//adjacency-list.png  used on input line 262.
+(pdftex.def)             Requested size: 85.35826pt x 51.84895pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//big-o-definition.png> <./images//big-o-formal.png> <./images//req-comp-def.png> <./images//interval-scheduling-problem.png> <./images//greedy-schedule-pseudo.png>]
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 273--274
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 271--272
 [][] 
  []
 
-[2] (./main.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--295
+
+ []
+
+<./images//linear-program-matrix-form.png, id=31, 588.1975pt x 238.8925pt>
+File: ./images//linear-program-matrix-form.png Graphic file (type png)
+<use ./images//linear-program-matrix-form.png>
+Package pdftex.def Info: ./images//linear-program-matrix-form.png  used on input line 297.
+(pdftex.def)             Requested size: 227.62204pt x 92.44594pt.
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 302--303
+[][] 
+ []
+
+[2 <./images//adjacency-list.png> <./images//linear-program-matrix-form.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16946 strings out of 480171
- 340762 string characters out of 5894488
+ 16964 strings out of 480171
+ 341404 string characters out of 5894488
  636027 words of memory out of 5000000
- 34579 multiletter control sequences out of 15000+600000
+ 34595 multiletter control sequences out of 15000+600000
  472408 words of font info for 43 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,8n,89p,459b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,18n,89p,459b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ferdi/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (2 pages, 351362 bytes).
+Output written on main.pdf (2 pages, 375405 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
