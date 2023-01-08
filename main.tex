@@ -317,20 +317,25 @@
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \textbf{Weighted Graph}: \\
-        \textbf{Weight function}: \\
-        \textbf{Length}: \\
-        \textbf{Distance}: \\
-        \textbf{Priority queue}: \\
+        \textbf{Weighted Graph}: is a pair (G, w), where G is a graph and $w: E(G) \rightarrow \mathbb{R}$ is a \textbf{weight function}\\
+        \textbf{Length}: of a path/walk $P = x_1 \dots x_t$ is the total weight of P's edges: 
+        length(P) = $\sum_{i=1}^{t-1}w(x_i, x_{i+1})$. \\
+        \textbf{Distance}: from x to y is the shortest length of any path/walk from x to y, or $\infty$ if they are in different components \\
+        \textbf{Priority queue}: each element has a priority, and the first element is the one with the lowest priority. \\
         \textbf{Dijkstra}: \\
-        \textbf{Complexity}: \\
-
+        \includegraphics[width = 8cm]{dijkstra-pseudocode.png}
+        \textbf{Complexity}: We perform $O(|V|)$ Insert operations and Extract operations, and $O(|E|)$ ChangeKey
+        operations, for a total of $O((|V| + |E|) log |V|)$ time when G is given in adjacency list form. \\
         \textbf{Dijkstra Operations}: \\
-        \textbf{Claim}: Dijkstra’s algorithm calculates distances correctly.\\
-        \textbf{Proof}: \\
-
-
-
+        \vspace{-5mm}
+        \setlist{nolistsep}
+        \begin{itemize} [noitemsep]
+            \item StartQueue(n) returns a new priority queue of maximum length n.
+            \item Insert(x, p) inserts a new element x with priority p.
+            \item Exctract() removes and returns the lowest-priority element.
+            \item ChangeKey(x, p) udpates the priority of x to p.
+            \item StartQueue takes $O(n)$ time, all other operations take $O(log(n))$ time.
+        \end{itemize}
     \end{minipage}
 };
 %------------ Dijkstra's Algorithm Header ---------------------
