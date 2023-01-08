@@ -147,42 +147,30 @@
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
     \textbf{Definitions}: \\
-    \vspace{-5mm}
-    \setlist{nolistsep}
-    \begin{itemize} [noitemsep]
-        \item \textbf{Graph}: G = (V, E)
-        \item \textbf{Edge}: E = E(G) is a set of edges contained in $\{\{u,v\}: u,v \in V, u \neq v\}$
-        \item \textbf{Vertex}: V = V(G) is a set of vertices
-        \item \textbf{Subgraph}: H = $(V_H, E_H)$ of G is a graph with $V_H \subseteq V$ and $E_H \subseteq E$
-        \item \textbf{Induced Subgraph}: is a subgraph if $E_H = \{e \in E: e \subseteq V_H\}$
-        \item \textbf{Component}: H of G is a maximal connected induced subgraph of G.
-        \item \textbf{Degree}: $d (v) = |N (v)|$
-        \item \textbf{Neighbourhood}: $N (v) = \{w \in V: \{v, w\} \in E\}$
-        \item \textbf{Walk}: sequence of vertices $v_0...v_k$ such that $\{v_i, v_{i+1}\} \in E$ for all i $\le$ k-1
-        \item \textbf{Length}: the value of k (see above walk definition)
-        \item \textbf{Euler Walk}: a walk that contains every edge in G exactly once.
-        \item \textbf{Isomorphism}: two graphs are isomorphic if there is a bijection f: $V_1 \rightarrow V_2$ such that $\{f(u), f(v)\} \in E_2$ if and only if $\{u, v\} \in E_1$
-        \item \textbf{Path}: is a walk in which no vertices repeat
-        \item \textbf{Connected}: A graph is connected if any two vertices are joined by a path
-        \item \textbf{Digraph}: is a pair G = (V, E), V is a set of vertices and E is a set of edges contained in $\{(u, v): u, v \in V, u \neq v\}$
-        \item \textbf{Strongly connected}: G is .. if for all $u, v \in V$, there is a path from u to v and a path from v to u.
-        \item \textbf{Weakly connected}:
-        \item \textbf{In-Neighbourhood}: $N^- (v) = \{u \in V(G): (u, v) \in E(G)\}$
-        \item \textbf{Out-Neighbourhood}: $N^+ (v) = \{w \in V(G): (v, w) \in E(G)\}$
-        \item \textbf{Cycle}:
-        \item \textbf{Hamilton cycle}:
-        \item \textbf{Bijection}:
-    \end{itemize}
-    \hline
-
-    \textbf{Theorem}: If G has an Euler walk, then either: \\
-    \vspace{-5mm}
-    \setlist{nolistsep}
-    \begin{itemize} [noitemsep]
-        \item every vertex of G has even degree; or
-        \item all but two vertices $v_0$ and $v_k$ have even degree, and any euler walk must have $v_0$ and $v_k$ as endpoints
-    \end{itemize}
-    \hline
+    \textbf{Graph}: G = (V, E) \\
+    \textbf{Edge}: E = E(G) is a set of edges contained in $\{\{u,v\}: u,v \in V, u \neq v\}$ \\
+    \textbf{Vertex}: V = V(G) is a set of vertices \\
+    \textbf{Subgraph}: H = $(V_H, E_H)$ of G is a graph with $V_H \subseteq V$ and $E_H \subseteq E$ \\
+    \textbf{Induced Subgraph}: is a subgraph if $E_H = \{e \in E: e \subseteq V_H\}$ \\
+    \textbf{Component}: H of G is a maximal connected induced subgraph of G. \\
+    \textbf{Degree}: $d (v) = |N (v)|$ \\
+    \textbf{Neighbourhood}: $N (v) = \{w \in V: \{v, w\} \in E\}$ \\
+    \textbf{Walk}: sequence of vertices $v_0...v_k$ such that $\{v_i, v_{i+1}\} \in E$ for all i $\le$ k-1 \\
+    \textbf{Length}: the value of k (see above walk definition) \\
+    \textbf{Euler Walk}: a walk that contains every edge in G exactly once. \\
+    \textbf{Isomorphism}: two graphs are isomorphic if there is a bijection f: 
+    $V_1 \rightarrow V_2$ such that $\{f(u), f(v)\} \in E_2$ if and only if $\{u, v\} \in E_1$ \\
+    \textbf{Path}: is a walk in which no vertices repeat \\
+    \textbf{Connected}: A graph is connected if any two vertices are joined by a path \\
+    \textbf{Digraph}: is a pair G = (V, E), V is a set of vertices and E is a set of edges contained in $\{(u, v): u, v \in V, u \neq v\}$ \\
+    \textbf{Strongly connected}: G is .. if for all $u, v \in V$, there is a path from u to v and a path from v to u. \\
+    \textbf{Weakly connected}: \\
+    \textbf{In-Neighbourhood}: $N^- (v) = \{u \in V(G): (u, v) \in E(G)\}$ \\
+    \textbf{Out-Neighbourhood}: $N^+ (v) = \{w \in V(G): (v, w) \in E(G)\}$ \\
+    \textbf{Cycle}: is a walk $W = w_0...w_k$ with $ w_0 = w_k$ and $k \ge 3$,
+    in which every vertex appears at most once except for $w_0$ and $w_k$ (which appear twice) \\
+    \textbf{Hamilton cycle}: is a cycle containing every vertex in the graph \\
+    \textbf{Bijection}: \\
     \end{minipage}
 };
 %------------ Graph Theory Header ---------------------
@@ -190,6 +178,36 @@
 \end{tikzpicture}
 
 
+
+
+%------------ Graph Theory ---------------
+\begin{tikzpicture}
+    \node [mybox] (box){%
+        \begin{minipage}{0.3\textwidth}
+    
+        \textbf{Theorem}: If G has an Euler walk, then either: \\
+        \vspace{-5mm}
+        \setlist{nolistsep}
+        \begin{itemize} [noitemsep]
+            \item every vertex of G has even degree; or
+            \item all but two vertices $v_0$ and $v_k$ have even degree, and any euler walk must have $v_0$ and $v_k$ as endpoints
+        \end{itemize}
+        \hline
+        \textbf{Theorem}: let G = (V, E) be a digraph with no isolated vertices, and let $U,v \in V$. Then G has an Euler walk 
+        from u to v if and only if G is weakly connected and either: \\
+        \vspace{-5mm}
+        \setlist{nolistsep}
+        \begin{itemize} [noitemsep]
+            \item u = v and every vertex of G has equal in- and out-degrees; order
+            \item $u \neq v, d^+ (u) = d^- (u) + 1, d^- (v) = d^+ (v) + 1$ and every other vertex of G has equal in- and out-degrees
+        \end{itemize}
+        \hline
+        \end{minipage}
+    };
+    %------------ Graph Theory Header ---------------------
+    \node[fancytitle, right=10pt] at (box.north west) {Graph Theory};
+    \end{tikzpicture}
+    
 
 
 
