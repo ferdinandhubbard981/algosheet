@@ -44,7 +44,7 @@ euler walk undirected graph d+ = d- except for start and end
 
 5f proof
 
-Dirac's theorem, definition, proof (3 lemmas)
+Dirac's theorem, definition, proof (3 lemmas) TODO
 
 handshaking lemma  definition and proof
 k-regular graph definition
