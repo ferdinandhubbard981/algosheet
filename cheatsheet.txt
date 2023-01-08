@@ -10,6 +10,8 @@ big o:
 slide 4 of big o slides with notation descriptions
 
 week 2:
+request definition
+compatible definition
 interval scheduling:
 interval scheduling formal notation
 interval scheduling algorithms and complexity etc...
@@ -19,7 +21,7 @@ graph theory:
 all definitions of graph properties with examples if necessary
 {Graph, edge, verted, component, degree, walk, isomorphism, euler walk, connected, 
 digraph, strongly connected, weakly connected, in-degree, out-degree, 
-cycle, hamilton cycle, }
+cycle, hamilton cycle, bijection, isomorphism}
 
 hamilton cycle requirement
 
