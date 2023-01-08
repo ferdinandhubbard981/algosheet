@@ -347,7 +347,7 @@
         \textbf{Lemma 2}: For all cuts $(A, B)$, $f^+(A) - f^-(A) = f^-(B) - f^+(B)$. \\
         \textbf{Proof}: We have shown that $v(f) = f^+(A) - f^-(A)$ because A and B are disjoint and $A \cup B = V.$
         \hline
-        \textbf{Lemma 3}: Push(G, c,s,t, f , P) returns a new flow f', with value $v(f') = v(f) + C$ in $O(|V(G)|)$ time\\
+        \textbf{Lemma 3}: Push(G, c,s,t, f , P) returns a new flow $f'$, with value $v(f') = v(f) + C$ in $O(|V(G)|)$ time\\
         \textbf{Ford-Fulkerson}: \\
         \includegraphics[width = 8cm]{ford-fulkerson-pseudocode.png}
         \textbf{Complexity}: Every step takes $O(|E|)$ time or $O(|V|)$ time, and since G is weakly connected we have 
@@ -375,11 +375,16 @@
                 \item if flow < capacity: then forward edge with value capacity-flow
                 \item if flow > 0: add backward edge with value flow
             \end{itemize}
+            \includegraphics[width = 8cm]{residual-graph-example.png}
             \textbf{Residual capacity of edge}: max\{capacity - flow, backward edge flow\}\\
             \textbf{Residual capacity of network}: minimum residual capacity of it's edges\\
             \textbf{Augmenting Path}: \\
-            
-            \includegraphics[width = 8cm]{residual-graph-example.png}
+            \textbf{Max-flow min-cut theorem}: The value of a maximum flow is equal to the minimum capacity of a cut, i.e. the minimum
+            value of $c^+(A)$ over all cuts (A, B). \\
+            \textbf{Proof}: Let f be a maximum flow, and let (A, B) be a cut minimising
+            $c^+(A)$. We already proved $v(f) \le c^+(A)$. Moreover, there is no
+            augmenting path for f , so exactly as before, there is a cut $(A'. B')$ with
+            $c^+(A') = v(f)$; thus $v(f) \ge c^+(A)$. The result follows. \\
             
         
         \end{minipage}
