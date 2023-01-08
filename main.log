@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.28)  8 JAN 2023 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,56 +577,62 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 55.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 54.
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 59--60
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 58--59
 [][] 
  []
 
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 66.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 71--72
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
 <./images//big-o-definition.png, id=4, 1168.365pt x 337.26pt>
 File: ./images//big-o-definition.png Graphic file (type png)
 <use ./images//big-o-definition.png>
-Package pdftex.def Info: ./images//big-o-definition.png  used on input line 77.
+Package pdftex.def Info: ./images//big-o-definition.png  used on input line 78.
 (pdftex.def)             Requested size: 227.62204pt x 65.7011pt.
 <./images//big-o-formal.png, id=6, 1262.7175pt x 351.3125pt>
 File: ./images//big-o-formal.png Graphic file (type png)
 <use ./images//big-o-formal.png>
-Package pdftex.def Info: ./images//big-o-formal.png  used on input line 78.
+Package pdftex.def Info: ./images//big-o-formal.png  used on input line 79.
 (pdftex.def)             Requested size: 227.62204pt x 63.32465pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 [][]
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 83--84
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 84--85
 [][] 
  []
 
 <./images//req-comp-def.png, id=7, 919.435pt x 198.7425pt>
 File: ./images//req-comp-def.png Graphic file (type png)
 <use ./images//req-comp-def.png>
-Package pdftex.def Info: ./images//req-comp-def.png  used on input line 89.
+Package pdftex.def Info: ./images//req-comp-def.png  used on input line 90.
 (pdftex.def)             Requested size: 227.62204pt x 49.20029pt.
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:90: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:91: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.90     \hline
+l.91     \hline
                
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -634,12 +640,12 @@ an alignment. Proceed, and I'll ignore this case.
 <./images//interval-scheduling-problem.png, id=8, 890.32625pt x 134.5025pt>
 File: ./images//interval-scheduling-problem.png Graphic file (type png)
 <use ./images//interval-scheduling-problem.png>
-Package pdftex.def Info: ./images//interval-scheduling-problem.png  used on input line 91.
+Package pdftex.def Info: ./images//interval-scheduling-problem.png  used on input line 92.
 (pdftex.def)             Requested size: 227.62204pt x 34.38695pt.
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:92: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:93: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.92     \hline
+l.93     \hline
                
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -647,122 +653,118 @@ an alignment. Proceed, and I'll ignore this case.
 <./images//greedy-schedule-pseudo.png, id=9, 882.29625pt x 383.4325pt>
 File: ./images//greedy-schedule-pseudo.png Graphic file (type png)
 <use ./images//greedy-schedule-pseudo.png>
-Package pdftex.def Info: ./images//greedy-schedule-pseudo.png  used on input line 93.
+Package pdftex.def Info: ./images//greedy-schedule-pseudo.png  used on input line 94.
 (pdftex.def)             Requested size: 227.62204pt x 98.9178pt.
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 97.
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 98.
 
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 97.
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 98.
 
 Missing character: There is no · in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
-
- []
-
-
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 102--103
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 103--104
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 111.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
-
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:123: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:125: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.123     \hline
+l.125     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:127: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:129: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.127     \hline
+l.129     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:134: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:136: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.134     \hline
+l.136     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 141--142
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 143--144
 [][] 
  []
 
-/home/ferdi/UoB/y2/alg/algosheet/main.tex:168: Misplaced \noalign.
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:176: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
-l.168     \hline
+l.176     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+/home/ferdi/UoB/y2/alg/algosheet/main.tex:185: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.185     \hline
                 
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 174--175
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 190--191
 [][] 
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 213--214
+Underfull \hbox (badness 6876) in paragraph at lines 229--230
 []|$\OML/cmm/m/it/9 y \OT1/cmr/m/n/9 = \OML/cmm/m/it/9 B[]x[] []\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 b [] x\OT1/cmr/m/n/9 ) +
  []
 
 
-Overfull \hbox (7.87187pt too wide) in paragraph at lines 189--215
+Overfull \hbox (7.87187pt too wide) in paragraph at lines 205--231
 [][] 
  []
 
 
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 219--220
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 235--236
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
- []
-
-
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 244--245
-[][] 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//big-o-definition.png> <./images//big-o-formal.png> <./images//req-comp-def.png> <./images//interval-scheduling-problem.png> <./images//greedy-schedule-pseudo.png>]
-Overfull \hbox (2.09277pt too wide) in paragraph at lines 265--266
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 260--261
+[][] 
+ []
+
+
+Overfull \hbox (2.09277pt too wide) in paragraph at lines 281--282
 [][] 
  []
 
 [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16968 strings out of 480171
- 340933 string characters out of 5894488
- 639028 words of memory out of 5000000
- 34592 multiletter control sequences out of 15000+600000
+ 16972 strings out of 480171
+ 341027 string characters out of 5894488
+ 644028 words of memory out of 5000000
+ 34596 multiletter control sequences out of 15000+600000
  476687 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,16n,89p,459b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ferdi/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (2 pages, 445236 bytes).
+Output written on main.pdf (2 pages, 451143 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

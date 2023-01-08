@@ -51,7 +51,6 @@
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
     Apply an algorithm you know in a clever way, don't write a new algorithm.
-
     \end{minipage}
 };
 %------------ tips Header ---------------------
@@ -59,15 +58,17 @@
 \end{tikzpicture}
 
 
-%------------ Set notation ---------------
+%------------ Notation ---------------
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-    $A \in [10] \equiv A \in [1..10]$
+    $A \in [10] \equiv A \in [1..10]$ \\
+    \{a, b c\} is a set of vertices \\
+    G\{a, b, c\} is a graph
     \end{minipage}
 };
-%------------ Set notation Header ---------------------
-\node[fancytitle, right=10pt] at (box.north west) {Set notation};
+%------------ Notation Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Notation};
 \end{tikzpicture}
     
 %------------ Big O ---------------
@@ -94,7 +95,7 @@
     \textbf{Complexity:} \\
     Step 2 takes O(n log n) \\
     Steps 3–6 all take O(1) time and are executed at most n times. \\
-    $\therefore total running time = O(n log n) + O(n) · O(1) = O(n log n).$ \\
+    $\therefore total running time = O(n log n) + O(n) · O(1) = O(n log n).$
     \end{minipage}
 };
 %------------ Interval Scheduling Header ---------------------
@@ -116,7 +117,8 @@
     \textbf{Proof}: By induction form the following loop invariant.
     At the start of the i'th iteration of 4-7: \\
     \vspace{-5mm}
-    \begin{itemize}
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
         \item A is equal to $A_t \cap \{(s_1, f1), ..., (s_{i-1}, f_{i-1})\}$
         \item lastf is equal to the latest finish time of any request in A (or 0 if A = [])
     \end{itemize}
@@ -146,27 +148,41 @@
     \begin{minipage}{0.3\textwidth}
     \textbf{Definitions}: \\
     \vspace{-5mm}
-    \begin{itemize}
-        \item Graph:
-        \item Edge
-        \item Vertex
-        \item component
-        \item degree
-        \item walk
-        \item isomorphism
-        \item euler walk
-        \item connected
-        \item digraph
-        \item strongly connected
-        \item weakly connected
-        \item in-degree
-        \item out-degree
-        \item cycle
-        \item hamilton cycle
-        \item bijection
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
+        \item \textbf{Graph}: G = (V, E)
+        \item \textbf{Edge}: E = E(G) is a set of edges contained in $\{\{u,v\}: u,v \in V, u \neq v\}$
+        \item \textbf{Vertex}: V = V(G) is a set of vertices
+        \item \textbf{Subgraph}: H = $(V_H, E_H)$ of G is a graph with $V_H \subseteq V$ and $E_H \subseteq E$
+        \item \textbf{Induced Subgraph}: is a subgraph if $E_H = \{e \in E: e \subseteq V_H\}$
+        \item \textbf{Component}: H of G is a maximal connected induced subgraph of G.
+        \item \textbf{Degree}: $d (v) = |N (v)|$
+        \item \textbf{Neighbourhood}: $N (v) = \{w \in V: \{v, w\} \in E\}$
+        \item \textbf{Walk}: sequence of vertices $v_0...v_k$ such that $\{v_i, v_{i+1}\} \in E$ for all i $\le$ k-1
+        \item \textbf{Length}: the value of k (see above walk definition)
+        \item \textbf{Euler Walk}: a walk that contains every edge in G exactly once.
+        \item \textbf{Isomorphism}: two graphs are isomorphic if there is a bijection f: $V_1 \rightarrow V_2$ such that $\{f(u), f(v)\} \in E_2$ if and only if $\{u, v\} \in E_1$
+        \item \textbf{Path}: is a walk in which no vertices repeat
+        \item \textbf{Connected}: A graph is connected if any two vertices are joined by a path
+        \item \textbf{Digraph}: is a pair G = (V, E), V is a set of vertices and E is a set of edges contained in $\{(u, v): u, v \in V, u \neq v\}$
+        \item \textbf{Strongly connected}: G is .. if for all $u, v \in V$, there is a path from u to v and a path from v to u.
+        \item \textbf{Weakly connected}:
+        \item \textbf{In-Neighbourhood}: $N^- (v) = \{u \in V(G): (u, v) \in E(G)\}$
+        \item \textbf{Out-Neighbourhood}: $N^+ (v) = \{w \in V(G): (v, w) \in E(G)\}$
+        \item \textbf{Cycle}:
+        \item \textbf{Hamilton cycle}:
+        \item \textbf{Bijection}:
     \end{itemize}
     \hline
 
+    \textbf{Theorem}: If G has an Euler walk, then either: \\
+    \vspace{-5mm}
+    \setlist{nolistsep}
+    \begin{itemize} [noitemsep]
+        \item every vertex of G has even degree; or
+        \item all but two vertices $v_0$ and $v_k$ have even degree, and any euler walk must have $v_0$ and $v_k$ as endpoints
+    \end{itemize}
+    \hline
     \end{minipage}
 };
 %------------ Graph Theory Header ---------------------
