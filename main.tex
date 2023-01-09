@@ -368,20 +368,75 @@
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
-        \textbf{Matching}: \\
+        \textbf{Prim's Algorithm explanation}: We work greedily: pick an arbitrary start vertex, then grow it into a
+        spanning tree by always choosing one of the cheapest available edges. \\
+        \textbf{Formal explanation}: \\
+        \includegraphics[width = 8cm]{Prim-formal.png}
+        \textbf{Prim pseudocode}: \\
+        \includegraphics[width = 8cm]{prim-pseudocode.png}
+        \textbf{Complexity}: \\
+        \includegraphics[width = 8cm]{prim-complexity.png}
     \end{minipage}
 };
 %------------ Prim's Algorithm Header ---------------------
 \node[fancytitle, right=10pt] at (box.north west) {Prim's Algorithm};
 \end{tikzpicture}
+
+
+%------------ Kruskal's Algorithm ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Kruskal's Algorithm explanation}: Rather than picking the lowest-weight edge that grows our component, we
+        just pick the lowest-weight edge anywhere that doesn’t make a cycle. \\
+        \textbf{Formal explanation}: \\
+        \includegraphics[width = 8cm]{Kruskal-formal.png}
+        \textbf{Kruskal pseudocode}: \\
+        \includegraphics[width = 8cm]{Kruskal-pseudocode.png}
+        \textbf{Complexity}: \\
+        \includegraphics[width = 8cm]{Kruskal-complexity.png}
+    \end{minipage}
+};
+%------------ Kruskal's Algorithm Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Kruskal's Algorithm};
+\end{tikzpicture}
+    
+
+%------------ Union-find data structure ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        
+        \textbf{Union-find data structure Operations}: \\
+        MakeUnionFind(X): Makes a new union-find data structure
+        containing a 1-element set {x} for each element $x \in X$.
+        Takes O(|X|) time. \\
+        \hline
+        Union(x, y): Merge the set containing x with the set containing y
+        into a single set in the data structure. Takes O(log |X|) time. \\
+        \hline
+        FindSet(x): Returns a unique identifier for the set containing x.
+        Takes O(log |X|) time. \\
+        \hline
+        \textbf{Union/2-3-4 tree}: \\
+        \includegraphics[width = 8cm]{union-example.png}
+        \textbf{Insertion}: \\
+        \includegraphics[width = 8cm]{insertion-explanation.png}
+        \textbf{Searching}: \\
+        \includegraphics[width = 8cm]{search-example.png}
+        \textbf{Deletion}: \\
+        \includegraphics[width = 8cm]{deletion-example.png}
+        \textbf{non-leaf-deletion}: \\
+        \includegraphics[width = 8cm]{non-leaf-deletion.png}
+
+
+    \end{minipage}
+};
+%------------ Union-find data structure Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Union-find data structure};
+\end{tikzpicture}
+
+
 
 
 %------------ Linear Programming ---------------
