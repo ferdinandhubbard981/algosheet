@@ -161,6 +161,7 @@
     \textbf{Hamilton cycle}: is a cycle containing every vertex in the graph \\
     \textbf{k-regular}: a graph is .. if every vertex has degree k\\
     \textbf{Bijection}: \\
+    \textbf{Planar}: a graph is planar if it can be drawn without any two edges overlapping. \\
     \end{minipage}
 };
 %------------ Graph Theory Header ---------------------
@@ -342,7 +343,45 @@
 \node[fancytitle, right=10pt] at (box.north west) {Dijkstra's Algorithm};
 \end{tikzpicture}
 
+%------------ Matchings ---------------
+\begin{tikzpicture}
+    \node [mybox] (box){%
+        \begin{minipage}{0.3\textwidth}
+            \textbf{Matching}: A matching in a graph is a collection of disjoint edges.
+            It is \textbf{perfect} if every vertex is contained in some matching edge. \\
+            \textbf{Lemma}: G is bipartite if and only if it has no odd-length cycle. \\
+            \includegraphics[width = 8cm]{bipartite-proof.png}
+            \textbf{Bipartite Graph}: A graph G = (V , E) is bipartite if V can be partitioned into disjoint sets A and B which
+            contain no edges \\
+            \textbf{MaxMatching}: \\
+            \includegraphics[width = 8cm]{maxMatching-pseudocode.png}
+            \textbf{Complexity}: \\
+            \includegraphics[width = 8cm]{maxMatching-complexity.png}
+            \textbf{Berg's Lemma}: M has no augmenting paths $\implies$ M is maximum. \\
+        \end{minipage}
+    };
+    %------------ Matchings Header ---------------------
+    \node[fancytitle, right=10pt] at (box.north west) {Matchings};
+    \end{tikzpicture}
 
+%------------ Prim's Algorithm ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+        \textbf{Matching}: \\
+    \end{minipage}
+};
+%------------ Prim's Algorithm Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Prim's Algorithm};
+\end{tikzpicture}
 
 
 %------------ Linear Programming ---------------
@@ -548,32 +587,14 @@
         \includegraphics[width = 8cm]{VC-proof.png}
         \hline
         \includegraphics[width = 8cm]{reduction-chain.png}
-
-        \textbf{NP}: \\
-        
-
-
-    \end{minipage}
-};
-%------------ NP problems Header ---------------------
-\node[fancytitle, right=10pt] at (box.north west) {NP problems};
-\end{tikzpicture}
-
-
-
-%------------ NP problems ---------------
-\begin{tikzpicture}
-\node [mybox] (box){%
-    \begin{minipage}{0.3\textwidth}
+        \hline
         \textbf{Complement}: Given a decision problem X, we write $\overline{X}$ for it's complement.
         Yes instances of X become No instances of $\overline{X}$ and vice-versa. \\
         \textbf{Co-NP}: We define Co-NP to be the set of decision problems whose complements
         are in NP, such as $\overline{SAT}$\\
         \textbf{Karp Reduction vs Cook reduction}: \\
         \includegraphics[width = 8cm]{reductions-comparison.png}
-        \textbf{NP}: \\
-        \textbf{NP}: \\
-       
+        % \textbf{NP}: \\
         
 
 
@@ -582,6 +603,59 @@
 %------------ NP problems Header ---------------------
 \node[fancytitle, right=10pt] at (box.north west) {NP problems};
 \end{tikzpicture}
+
+
+
+%------------ Dynamic Programming ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Dynamic programming design steps}: \\
+        \textbf{step 1}: come up with an exponential-time recursive algorithm for your problem by reducing it to multiple smaller versions of itself \\
+        \textbf{step 2}: arrange things so that most of the calls of your recursive algorithm are repeated, and use this to make it polynomial \\
+        \textbf{step 3}: rewrite the algorithm as an iterative one (table) note: how can you collapse the recursive algorithm? \\
+        \textbf{tips}: \\
+        Think of your problem as a sequence of choices/ decisions \\
+        Recursively call program on each case that arises from the decision \\
+        \textbf{Example}: \\
+        \includegraphics[width = 8cm]{recursive-WIS.png}
+        \textbf{Memoise}: every-time we do a call (maybe recursive), we store the result in a hashmap/ data structure\\
+        \textbf{Why dijkstra doesn't work with negatives}: dijkstra works locally, therefore doesn't work with negative weights\\
+        \textbf{Bellman-ford recursive}: \\
+        \includegraphics[width = 8cm]{bellman-ford-pseudocode.png}
+        \textbf{Complexity}: $|V|^2$ calls, each call is $O(|V|)$. $\therefore O(|V|^3)$\\
+        
+
+       
+        
+
+
+    \end{minipage}
+};
+%------------ Dynamic Programming Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Dynamic Programming};
+\end{tikzpicture}
+
+
+%------------ Dynamic Programming 2 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        
+        \textbf{Tabular Bellman-ford}: \\
+        \includegraphics[width = 8cm]{bellman-ford-graph.png}
+        \includegraphics[width = 8cm]{bellman-ford-table.png}
+
+        
+        
+
+
+    \end{minipage}
+};
+%------------ Dynamic Programming 2 Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Dynamic Programming 2};
+\end{tikzpicture}
+
 
 
 

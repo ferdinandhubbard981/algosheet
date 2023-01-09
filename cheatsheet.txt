@@ -367,7 +367,7 @@ dynamic programming:
 
 explanation: {
     think of your problem as a sequence of choices/ decisions
-    call program on each 'case'/ decision
+    recursively call program on each case (usually just 2) that arises from the decision
 }
 
 example for interval scheduling: {
