@@ -467,6 +467,124 @@
     \end{tikzpicture}
 
 
+%------------ Special Flow Graphs ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Circulation network}: A circulation network (G, c, D) is a directed graph G = (V, E), a
+    capacity function $c: E \rightarrow \mathbb{N}$, and a \textbf{Demand function} $D: V \rightarrow \mathbb{Z}$. \\
+    \textbf{Circulation}: A circulation is a function $f: E \rightarrow \mathbb{R}$ with $0 \le f(e) \le c(e)$ 
+    for all $e \in E$, and $f^-(v) - f^+(e) = D(v)$ for all $v \in V$. \\
+    \textbf{Demand Networks:}: \\
+    \includegraphics[width = 5cm]{demand-flow-before.png} \\
+    \textbf{Transformed into normal flow graph}: \\
+    \includegraphics[width = 5cm]{demand-flow-after.png} \\
+    \textbf{Capacity flow}: \\
+    \includegraphics[width = 5cm]{capacity-flow-before.png} \\
+    \textbf{Transformed into normal flow graph}: \\
+    \includegraphics[width = 5cm]{capacity-flow-after.png}
+
+
+        
+    \end{minipage}
+};
+%------------ Special Flow Graphs Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Special Flow Graphs};
+\end{tikzpicture}
+
+
+%------------ NP problems ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{NP}: Formally, NP is the class of all decision problems X which have 
+    a polynomial-time algorithm \textbf{Verify} such that if and
+    only if x is a Yes instance of X, then there is some bit string w (called a
+    \textbf{witness}) with \textbf{Verify}(x,w) = Yes.\\
+
+    \textbf{NP-hard}: any problem in NP is Cook-reducible to it\\
+    \textbf{NP-complete}: is both NP-hard and in NP\\
+    \textbf{CNF}: And of Or clauses e.g. $(A \cup B) \cap (C \cup D)$ \\
+    \textbf{SAT problem}: asks, "is this input satisfiable?". SAT is NP-complete. \\
+    \textbf{Cook-levin Theorem}: every problem in NP is reducable to SAT. \\
+    \textbf{Cook reduction}: from X to Y is an algorithm for problem X which,
+    given an input of size s, runs in time poly(s) while making poly(s) calls to
+    an oracle for Y whose input instances are all of size poly(s). \\
+    \textbf{Oracle}: for Y is a black box which, given an
+    instance of problem Y , outputs a valid solution in O(1) time.\\
+
+    \textbf{3-SAT}: asks: is the input width-3 CNF formula satisfiable?\\
+    \textbf{Theorem}: 3-sat is np-complete\\
+    \textbf{Proof}: \\
+    \includegraphics[width = 8cm]{3-SAT-1.png}
+    \includegraphics[width = 8cm]{3-SAT-2.png}
+    \includegraphics[width = 8cm]{3-SAT-3.png}
+    \textbf{NP}: \\
+        
+
+
+
+    \end{minipage}
+};
+%------------ NP problems Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {NP problems};
+\end{tikzpicture}
+
+%------------ NP problems ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Independant Set (IS)}: an independent set is a subset of V which
+        contains no edges. \\
+        \textbf{Decision problem example}: \\
+        problem: what is the maximum independent set for graph G \\
+        Decision problem: Is there an independent set of size at least k for graph G \\
+        \textbf{Theorem}: IS is np-complete\\
+        \textbf{Proof}: \\
+        \includegraphics[width = 8cm]{gadge-IS.png}
+        \includegraphics[width = 8cm]{IS-example.png}
+        \textbf{Vertex Cover (VC)}: \\
+        \includegraphics[width = 8cm]{VC-Theorem.png}
+        \includegraphics[width = 8cm]{VC-proof.png}
+        \hline
+        \includegraphics[width = 8cm]{reduction-chain.png}
+
+        \textbf{NP}: \\
+        
+
+
+    \end{minipage}
+};
+%------------ NP problems Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {NP problems};
+\end{tikzpicture}
+
+
+
+%------------ NP problems ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Complement}: Given a decision problem X, we write $\overline{X}$ for it's complement.
+        Yes instances of X become No instances of $\overline{X}$ and vice-versa. \\
+        \textbf{Co-NP}: We define Co-NP to be the set of decision problems whose complements
+        are in NP, such as $\overline{SAT}$\\
+        \textbf{Karp Reduction vs Cook reduction}: \\
+        \includegraphics[width = 8cm]{reductions-comparison.png}
+        \textbf{NP}: \\
+        \textbf{NP}: \\
+       
+        
+
+
+    \end{minipage}
+};
+%------------ NP problems Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {NP problems};
+\end{tikzpicture}
+
+
+
 
 \end{multicols*}
 \end{document}
